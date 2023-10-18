@@ -1,0 +1,301 @@
+
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+/* Styling af body */
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #ebd0ac;
+}  
+
+
+
+
+/* Styling af Header og indhold */
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 16%;
+}
+
+
+.waveone {
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+
+
+/* Indsæt logo og style det i nav-bar */
+
+.logo {
+    height: auto;
+    width: 100px;
+    margin-top: 3%;
+    margin-left: 3%;
+   
+}
+
+/* NAVBAR  */
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: #ffdbdb;
+    position: relative; 
+    padding: 0%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    z-index: 100;
+}
+
+/* Flytter menu-elementer til højre  */
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+/* Gør at elementerne er på en vendret linje */
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+/* Styling af nav bar menu elementer i korrekt font etc */
+
+nav ul li a {
+    font-family: Helvetica, sans-serif;
+    color: #e96547;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ a:hover {
+    transition: 1s;
+    color: #7e9fe8 ;
+}
+
+/* Styling af dropdowm menu */
+
+ .dropdown  {
+    display: block;
+    position: absolute;
+    right: 12%;
+    top: 100%;
+    background-color: #ffdbdb;
+    border-radius: 10px; 
+    visibility: hidden; /* her bruger jeg hidden effekt for at skjule den indtil hoveren er over*/
+    width: 200px;
+    height: auto;
+}
+
+.dropdown li a {
+    font-size: 16px;
+}
+
+/*  Jeg tilføjer :hover element så den først kommer frem når musen er over  */
+
+li:hover .dropdown {
+    display: block;
+    visibility: visible;
+}
+
+  .dropdown li {
+    display: block;
+    padding: 5px;
+  }
+
+
+
+
+
+
+
+/* SEKTION 1 - NYHEDER */
+/* Styling af nyheder p og billede */
+
+
+
+.nyheder {
+    color:#7e9fe8; 
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Styling af hover, sådan billedet bliver gennenmsigt ved musen over */
+
+.nyheder :hover img {
+    opacity: 0.7;
+}
+
+.nyhederfoto {
+    height: 350px;
+    width: auto;
+}
+
+
+
+
+/* SEKTION 2 - OM/HEADER */
+/* Styling af sektion 2 af forsiden */
+
+.ombloggen {
+    display: flex;
+}
+
+.bluebox {
+    margin-left: 0;
+    height: auto;
+    width: 850px;
+    position: relative;
+    display: block;
+}
+
+/* Styling af h1 og h2 */
+
+.tekst h1 {
+    font-family: Helvetica, sans-serif;
+    color: #ffdbdb;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tekst h2 {
+    font-family: Helvetica, sans-serif;
+    color: #ffdbdb;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Placering af header oven på den blå illustration */
+
+.om {
+    position: relative;
+    display: inline-block; /* Valgfrit, afhænger af dit layout */
+}
+
+
+.tekst {
+    position: absolute;
+    top: 50%; /* Placer teksten vertikalt i midten af billedet */
+    left: 40%; /* Placer teksten horisontalt i midten af billedet */
+    transform: translate(-50%, -50%); /* Centrer teksten præcist */
+    padding: 10px; /* Tilpas polstring efter behov */
+    z-index: 1; /* Sørg for, at teksten er over billedet */
+
+}
+
+.omcecilia {
+    padding-left: 200px;
+}
+
+/* Styling af billedet af mig, Cecilia */
+
+.cecilia {
+    height: auto;
+    width: 200px;
+    margin-left: auto;
+}
+
+.omcecilia :hover img {
+    opacity: 0.7;
+}
+
+/* Styling af teksten og den class */
+
+.omcecilia a {
+color: #ffdbdb;
+font-family: Helvetica, sans-serif;
+font-weight: 400;
+font-size: 26px;
+}
+
+
+
+
+
+
+/* FOOTER */
+/* Styling af footer. Min footer er simpel med link, logo og kontakt via LinkedIn */
+
+
+/* Alt i venstre side */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e96547; 
+    color: #ffdbdb; 
+    padding: 10px;
+    text-transform: uppercase;
+    z-index: 100;
+    margin-top: 0%;
+    height: 100px;
+  }
+
+.wavetwo {
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    position: static;
+    z-index: -1;
+}
+
+.left-content {
+    display: flex;
+  }
+
+.left-content a {
+    color: #ffdbdb;
+    text-decoration: none;
+    margin-right: 10px; 
+  }
+
+a:hover {
+    transition: 1s;
+    color: #7e9fe8 ;
+}
+
+/* Alt i højre side af footer */
+
+.right-content {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styling a linkedin */
+
+  .linkedin {
+    color: #ffdbdb;
+    text-decoration: none;
+  }
+  
+  /* Styling af logo og p  */
+
+.right-content img {
+    max-width: 100px; 
+    margin-right: 10px; 
+  }
+  
+.right-content p {
+    margin: 0; 
+  }
+  
+
+

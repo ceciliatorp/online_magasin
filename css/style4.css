@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.studerende {
+    font-family: Helvetica, sans-serif;
+    color: #e96547;
+    margin: 0 20%;
+}
+
+.studerende h1 {
+    font-size: 30px;
+    text-transform: uppercase;   
+}
+  
+.studerende h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.brodteskt {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+}
+.studerende h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.studerende h4 {
+    font-size: 22px;
+
+}
+
+.sapa {
+    height: auto;
+    width: 850px;
+    
+}
+
+
+
+.fotobjergogtekst {
+    display: flex;
+}
+
+.okonomien {
+    flex: 1;
+    margin: 10px 10px;
+}
+
+.bjerge {
+    height: auto;
+    width: 800px;
+    flex: 1;
+   
+}
